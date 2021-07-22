@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body class="indigo">
+    <div class="row">
+        <div class="col-12 center">
+            <h2> URL Shortener</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="container col s12 m10 push-m1 center light-blue lighten-4">
+            <div class="box col s12">
+
+                <p>You can insert a link, and a short version url it will give to you. </p>
+                <h4>Example</h4>
+                <code>POST [project_url]/api/shorturl - https://www.google.com </code>
+            </div>
+            <div class="box col s6 push-s3">
+
+                <form class="form" action="/api/shorturl" method="post">
+                    <label for="url">Link: </label>
+                    <input type="text" id="link" name="url" placeholder="https://www.google.com">
+                    <input type="submit">
+                </form>
+            </div>
+
+            <div class="box col s12">
+                <h4>Example Usage</h4>
+                <a href="/api/shorturl/1">[this_project_url]/api/shorturl/1</a>
+                <h5>Will redirect to</h5>
+                <p>https://www.google.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
